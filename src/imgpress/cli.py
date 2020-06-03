@@ -51,5 +51,6 @@ def main():
 
             im.save(args.outfile, args.format, **kargs)
 
-    except IOError:
+    except IOError as e:
+        print(e)
         print("cannot convert", args.infile)

@@ -3,8 +3,11 @@ version: git
 summary: imgpress
 description: |
   A utility for encoding and compressing images for optimal web use.
+grade: stable
 base: core18
-confinement: devmode
+confinement: strict
+architectures:
+  - build-on: [amd64, arm64, armhf, i386]
 
 parts:
   imgpress:
@@ -15,3 +18,5 @@ parts:
 apps:
   imgpress:
     command: bin/imgpress
+    plugs:
+      - home

@@ -1,4 +1,4 @@
-cimage
+imgpress
 ========
 
 A utility for encoding and compressing images for optimal web use.
