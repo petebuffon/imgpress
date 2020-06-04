@@ -1,13 +1,14 @@
-import os
+import os, sys
 
-def rename(infile, format):
+def rename(infile, form):
     f, e = os.path.splitext(infile)
-    if format == "JPEG":
-        outfile_extension = ".jpeg"
-    if format == "PNG":
-        outfile_extension = ".png"
-    if format == "WEBP":
-        outfile_extension = ".webp"
-    outfile = f + outfile_extension
+    outfile = f + "." + form.lower()
+
+    if outfile in os.listdir():
+        num = 0
+        while outfile in os.listdir():
+            num += 1
+            num_formatted = f"_{num:02d}."
+            outfile = f + num_formatted + form.lower()
 
     return outfile

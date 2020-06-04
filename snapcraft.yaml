@@ -7,7 +7,7 @@ grade: stable
 base: core18
 confinement: strict
 architectures:
-  - build-on: [amd64, arm64, armhf, i386]
+  - build-on: [amd64, arm64, armhf]
 
 parts:
   imgpress:
