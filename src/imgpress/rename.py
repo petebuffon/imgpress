@@ -1,6 +1,9 @@
-import os, sys
+import os
+import sys
+
 
 def rename(infile, form):
+    """Automatic naming of outfile with original overwrite protection."""
     f, e = os.path.splitext(infile)
     outfile = f + "." + form.lower()
 

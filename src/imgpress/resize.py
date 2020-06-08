@@ -1,4 +1,5 @@
 def resize_image(image, width, height):
+    """Resize image to explicit pixel dimensions."""
     width = int(width)
     height = int(height)
     aspect_ratio = image.width / image.height

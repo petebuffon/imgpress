@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='imgpress',
-    version='0.1.0',
+    version='0.1.1',
     author='Pete Buffon',
     author_email='pabuffon@gmail.com',
     description='A utility for encoding and compressing images for optimal web use.',

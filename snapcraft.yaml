@@ -1,8 +1,7 @@
 name: imgpress
-version: git
 summary: imgpress
-description: |
   A utility for encoding and compressing images for optimal web use.
+adopt-info: imgpress
 grade: stable
 base: core18
 confinement: strict
@@ -14,6 +13,7 @@ parts:
     plugin: python
     python-version: python3
     source: .
+    parse-info: [setup.py]
 
 apps:
   imgpress:
